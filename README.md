@@ -29,22 +29,21 @@
 
 ## تضيفي بوست جديد
 
-كل بوست في الموقع عبارة عن صورتين: صورة البوست، وصورة الكابشن.
+كل بوست في الموقع عبارة عن: صورة التصميم، والكابشن مكتوب كنص، ولينك البوست.
 
-1. ادخلي فولدر `images` واضغطي **Add file** ثم **Upload files**، وارفعي الصورتين (مثلاً `new1_v.jpg` لصورة البوست و`new1_c.jpg` للكابشن).
+1. ادخلي فولدر `images` واضغطي **Add file** ثم **Upload files**، وارفعي صورة التصميم (مثلاً `new1.jpg`).
 2. افتحي `works.js` واضغطي القلم.
 3. لاقي السطر `var WORKS = [` وتحته على طول ضيفي سطر زي ده (ومتنسيش الفاصلة في آخره):
 
 ```
-  {"visual": "images/new1_v.jpg", "caption": "images/new1_c.jpg", "brand": "rossy", "group": "rossy", "categories": "rossy", "link": "https://www.facebook.com/...", "platform": "facebook"},
+  {"visual": "images/new1.jpg", "text": "اكتبي الكابشن هنا\n\nوكل سطر جديد اكتبي قبله \n", "brand": "rossy", "group": "rossy", "categories": "rossy", "link": "https://www.facebook.com/...", "platform": "facebook"},
 ```
 
-- `categories` و `group`: المجال اللي يظهر فيه البوست: rossy أو samir أو lx أو arena أو misc.
-- بوستات يُدنين مكتوبة جوه `index.html` نفسه (الصورة والكابشن كنص)، في قسم "نماذج أعمالي".
+- `categories` و `group`: المجال: udnyn أو rossy أو samir أو lx أو arena أو misc.
 - `platform`: facebook أو instagram.
-- لو البوست ملوش كابشن (زي الكاروسيل)، شيلي جزء `"caption": ...` خالص.
+- ترتيب البوستات في الملف هو ترتيب ظهورها في الموقع، فحطي الأقوى الأول.
 
-4. **Commit changes**. البوست هيظهر في أول المجال بتاعه، وعدد الشغل في الفلاتر يتحدّث لوحده.
+4. **Commit changes**.
 
 ---
 
